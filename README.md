@@ -16,4 +16,8 @@ så jeg laver nok et snake spil eller lidt kryds & bolle
 
 Jeg scouter lige mine muligheder 
 
+_________________________________________________
+
+Status er at jeg gennemser mulighederne for at lave et snake spil, men vælger nok at lave et mere simpelt spil. Kunne være det allerede nævnte Kryds & Bolle
+
 
