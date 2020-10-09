@@ -15,7 +15,6 @@ let board = [
     createCanvas(400, 400);
     w = width / 3;
     h = height / 3;
-    bestMove();
   }
   
   function equals3(a, b, c) {
@@ -56,13 +55,22 @@ let board = [
       }
     }
   
+
     if (winner == null && openSpots == 0) {
       return 'tie';
     } else {
       return winner;
     }
   }
-  
+function gameRestart() {
+
+}
+
+function restartbutton() {
+  document.getElementById("RestartButton");
+  addEventListener("click", gameRestart );
+}
+ 
   function mousePressed() {
     if (currentPlayer == human) {
       // Human make turn
@@ -109,9 +117,9 @@ let board = [
       let resultP = createP('');
       resultP.style('font-size', '32pt');
       if (result == 'tie') {
-        resultP.html('Tie!');
+        resultP.html('Uafgjort!');
       } else {
-        resultP.html(`${result} wins!`);
+        resultP.html(`${result} har vundet!`);
       }
     }
   }
