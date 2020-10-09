@@ -62,14 +62,10 @@ let board = [
       return winner;
     }
   }
-function gameRestart() {
 
-}
-
-function restartbutton() {
-  document.getElementById("RestartButton");
-  addEventListener("click", gameRestart );
-}
+  function Genstart() {
+    location.reload();
+  }
  
   function mousePressed() {
     if (currentPlayer == human) {
