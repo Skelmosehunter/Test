@@ -66,6 +66,12 @@ let board = [
   function Genstart() {
     location.reload();
   }
+
+  function NyRunde() {
+    context.clearRect(0, 0, w, h);
+    setup();
+    draw();
+  }
  
   function mousePressed() {
     if (currentPlayer == human) {
@@ -114,8 +120,10 @@ let board = [
       resultP.style('font-size', '32pt');
       if (result == 'tie') {
         resultP.html('Uafgjort!');
+        console.log("0 points til begge")
       } else {
         resultP.html(`${result} har vundet!`);
+        console.log("10 points til Computeren");
       }
     }
   }
