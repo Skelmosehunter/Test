@@ -68,9 +68,9 @@ let board = [
   }
 
   function NyRunde() {
-    context.clearRect(0, 0, w, h);
     setup();
-    draw();
+    draw2();
+
   }
  
   function mousePressed() {
@@ -86,7 +86,21 @@ let board = [
       }
     }
   }
+  function Clean(){
+    if 
+  }
+
+
+  function draw2() {
+    background(255);
+    strokeWeight(4);
   
+    line(w, 0, w, height);
+    line(w * 2, 0, w * 2, height);
+    line(0, h, width, h);
+    line(0, h * 2, width, h * 2);
+  }
+
   function draw() {
     background(255);
     strokeWeight(4);
